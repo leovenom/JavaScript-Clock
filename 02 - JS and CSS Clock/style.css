@@ -1,6 +1,5 @@
 html {
-  background: url(https://images.unsplash.com/photo-1563364664-399838d1394c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2852&q=80);
-
+  background: #018DED url(https://images.unsplash.com/photo-1563364664-399838d1394c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2852&q=80);
   background-size: cover;
   font-family: 'helvetica neue';
   text-align: center;
@@ -57,6 +56,9 @@ body {
 .hour-hand {
   background: black;
   height: 5px;
+  width: 105px;
+  left: 45px;
+  top: 148px;
 }
 .min-hand {
   background: black;
@@ -65,4 +67,22 @@ body {
 .second-hand {
   background: red;
   height: 3px;
+}
+.dot {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 100px;
+  background: whitesmoke;
+  border-radius: 100px;
+  margin: auto;
+  z-index: 1;
+  box-shadow:
+    0 0 0 2px rgba(0,0,0,0.1),
+    inset 0 0 0 3px #EFEFEF,
+    0 0 10px rgba(0,0,0,0.2);
 }
